@@ -35,7 +35,7 @@ async function render() {
     ${todos
       .map(
         (x) =>
-          `<div class="todos"><p><b>Yapılacaklar:</b> <span>${x.todo}:</span> <b> ${x.completed} </b></p></div>`
+          `<div class="todos"><p><b>Todos:</b> <span>${x.todo}:</span> <b> ${x.completed} </b></p></div>`
       )
       .join("")}</div>`;
   }
