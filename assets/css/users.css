@@ -1,0 +1,110 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+ body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Montserrat", sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+
+
+#usersContainer {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 16px;
+  padding-inline: 24px;
+}
+
+.userBox {
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+}
+
+.userBox {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.userBox:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.user h4 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.user span {
+  color: #2a9d8f;
+}
+
+.user p {
+  color: #2a9d8f;
+}
+
+.user p b {
+  color: #264653;
+}
+
+.todos {
+  background-color: #e9f5f2;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.todos span {
+  color: #e76f51;
+}
+
+.todos b {
+  color: #264653;
+}
+
