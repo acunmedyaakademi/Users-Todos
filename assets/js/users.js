@@ -18,9 +18,7 @@ async function render() {
   for (let user of users) {
     const todos = await handleUserTodos(user.id);
     usersContainer.innerHTML += `<div class='userBox'><div class="user">
-      <h4>${
-        user.firstName
-      }  <span>${user.lastName.toLocaleUpperCase()}</span></h4>
+      <h4>${user.firstName}  <span>${user.lastName.toLocaleUpperCase()}</span></h4>
       <p><b>Age:</b> ${user.age}</p>
       <p><b>Gender:</b> ${user.gender}</p>
       <p><b>Email:</b> ${user.email}</p>
